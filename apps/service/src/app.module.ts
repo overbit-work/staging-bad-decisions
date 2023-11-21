@@ -13,6 +13,7 @@ import { HttpInstrumentation } from "@opentelemetry/instrumentation-http";
 import { OTLPTraceExporter } from "@opentelemetry/exporter-trace-otlp-grpc";
 import { BatchSpanProcessor } from "@opentelemetry/sdk-trace-node";
 import { UserModule } from "./user/user.module";
+import { TestModule } from "./test/test.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -31,6 +32,7 @@ import { AuthModule } from "./auth/auth.module";
     ACLModule,
     AuthModule,
     UserModule,
+    TestModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
